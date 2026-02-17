@@ -4,7 +4,6 @@ import numpy as np
 from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.metrics import r2_score
 
-from sklearn.linear_model import LinearRegression
 from sklearn.ensemble import RandomForestRegressor, GradientBoostingRegressor
 
 np.random.seed(123)
@@ -29,12 +28,6 @@ X_trn, X_val, y_trn, y_val = train_test_split(X, y, test_size=0.2, random_state=
 
 # ------------------------- Define models + tuning grids -------------------------
 candidates = [
-    (
-        "Linear",
-        LinearRegression(random_state=123),
-        {"alpha": [0.1, 1.0, 10.0, 50.0, 100.0]}
-    ),
-        
     (
         "RandomForest",
         RandomForestRegressor(random_state=123, n_jobs=-1),
