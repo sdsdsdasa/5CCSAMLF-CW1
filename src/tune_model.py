@@ -33,10 +33,6 @@ X_trn, X_val, y_trn, y_val = train_test_split(X, y, test_size=0.2, random_state=
 
 # Define models to compare (simple set)
 models = {
-    "LinearRegression": LinearRegression(),
-    "Ridge(alpha=1.0)": Ridge(alpha=1.0, random_state=123),
-    "Lasso(alpha=0.001)": Lasso(alpha=0.001, random_state=123, max_iter=10000),
-    "ElasticNet(a=0.001,l1=0.5)": ElasticNet(alpha=0.001, l1_ratio=0.5, random_state=123, max_iter=10000),
     "RandomForest": RandomForestRegressor(
         n_estimators=300, random_state=123, n_jobs=-1
     ),
