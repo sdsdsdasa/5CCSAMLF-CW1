@@ -40,7 +40,13 @@ models = {
     "RandomForest": RandomForestRegressor(
         n_estimators=300, random_state=123, n_jobs=-1
     ),
-    "GradientBoosting": GradientBoostingRegressor(random_state=123)
+    "GradientBoosting": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=200, 
+        learning_rate=0.1, 
+        max_depth=2, 
+        subsample=1.0
+        ) # obtained from fine-tuning (tune_model.py)
 }
 
 # Fit + evaluate each model on validation set
