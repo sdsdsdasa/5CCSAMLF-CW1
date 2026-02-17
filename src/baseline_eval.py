@@ -35,19 +35,19 @@ out.to_csv('outputs/CW1_submission_K23158987.csv', index=False) # Please use you
 
 ################################################################################
 
-# At test time, we will use the true outcomes
-tst = pd.read_csv('CW1_test_with_true_outcome.csv') # You do not have access to this
+# # At test time, we will use the true outcomes
+# tst = pd.read_csv('CW1_test_with_true_outcome.csv') # You do not have access to this
 
-# This is the R^2 function
-def r2_fn(yhat):
-    eps = y_tst - yhat
-    rss = np.sum(eps ** 2)
-    tss = np.sum((y_tst - y_tst.mean()) ** 2)
-    r2 = 1 - (rss / tss)
-    return r2
+# # This is the R^2 function
+# def r2_fn(yhat):
+#     eps = y_tst - yhat
+#     rss = np.sum(eps ** 2)
+#     tss = np.sum((y_tst - y_tst.mean()) ** 2)
+#     r2 = 1 - (rss / tss)
+#     return r2
 
-# How does the linear model do?
-print(r2_fn(yhat_lm))
+# # How does the linear model do?
+# print(r2_fn(yhat_lm))
 
 
 
