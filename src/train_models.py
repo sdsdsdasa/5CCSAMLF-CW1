@@ -58,6 +58,9 @@ print("\n=== Model ranking (best -> worst) ===")
 for name, r2 in results_sorted:
     print(f"{name:25s}  {r2:.4f}")
 
+
+#--------------------------------------#
+
 # Train best model on FULL training data and produce test predictions
 best_name = results_sorted[0][0]
 best_model = models[best_name]
