@@ -33,7 +33,7 @@ X_trn, X_val, y_trn, y_val = train_test_split(X, y, test_size=0.2, random_state=
 
 # Define models to compare (simple set)
 models = {
-    "RandomForest": RandomForestRegressor( 
+    "RandomForest0": RandomForestRegressor( 
         random_state=123, 
         n_jobs=-1, 
         n_estimators=300, #[300, 600]
@@ -41,13 +41,90 @@ models = {
         min_samples_split=2, #[2, 5]
         min_samples_leaf=1 #[1, 2]
     ),
-    "GradientBoosting": GradientBoostingRegressor(
+    "RandomForest1": RandomForestRegressor( 
+        random_state=123, 
+        n_jobs=-1, 
+        n_estimators=600, #[300, 600]
+        max_depth=None, #[None, 10, 20]
+        min_samples_split=2, #[2, 5]
+        min_samples_leaf=1 #[1, 2]
+    ),
+    "RandomForest2": RandomForestRegressor( 
+        random_state=123, 
+        n_jobs=-1, 
+        n_estimators=300, #[300, 600]
+        max_depth=10, #[None, 10, 20]
+        min_samples_split=2, #[2, 5]
+        min_samples_leaf=1 #[1, 2]
+    ),
+    "RandomForest3": RandomForestRegressor( 
+        random_state=123, 
+        n_jobs=-1, 
+        n_estimators=300, #[300, 600]
+        max_depth=20, #[None, 10, 20]
+        min_samples_split=2, #[2, 5]
+        min_samples_leaf=1 #[1, 2]
+    ),
+    "RandomForest4": RandomForestRegressor( 
+        random_state=123, 
+        n_jobs=-1, 
+        n_estimators=300, #[300, 600]
+        max_depth=None, #[None, 10, 20]
+        min_samples_split=5, #[2, 5]
+        min_samples_leaf=1 #[1, 2]
+    ),
+    "RandomForest5": RandomForestRegressor( 
+        random_state=123, 
+        n_jobs=-1, 
+        n_estimators=300, #[300, 600]
+        max_depth=None, #[None, 10, 20]
+        min_samples_split=2, #[2, 5]
+        min_samples_leaf=2 #[1, 2]
+    ),
+    "GradientBoosting0": GradientBoostingRegressor(
         random_state=123, 
         n_estimators=200, #[200, 400]
         learning_rate=0.05, #[0.05, 0.1]
         max_depth=2, #[2, 3, 4]
         subsample=0.8 #[0.8, 1.0]
-    )
+    ),
+    "GradientBoosting1": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=400, #[200, 400]
+        learning_rate=0.05, #[0.05, 0.1]
+        max_depth=2, #[2, 3, 4]
+        subsample=0.8 #[0.8, 1.0]
+    ),
+    "GradientBoosting2": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=200, #[200, 400]
+        learning_rate=0.1, #[0.05, 0.1]
+        max_depth=2, #[2, 3, 4]
+        subsample=0.8 #[0.8, 1.0]
+    ),
+    "GradientBoosting3": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=200, #[200, 400]
+        learning_rate=0.05, #[0.05, 0.1]
+        max_depth=3, #[2, 3, 4]
+        subsample=0.8 #[0.8, 1.0]
+    ),
+    "GradientBoosting4": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=200, #[200, 400]
+        learning_rate=0.05, #[0.05, 0.1]
+        max_depth=4, #[2, 3, 4]
+        subsample=0.8 #[0.8, 1.0]
+    ),
+    "GradientBoosting5": GradientBoostingRegressor(
+        random_state=123, 
+        n_estimators=200, #[200, 400]
+        learning_rate=0.05, #[0.05, 0.1]
+        max_depth=2, #[2, 3, 4]
+        subsample=1.0 #[0.8, 1.0]
+    ),
+    
+    
 }
 
 # Fit + evaluate each model on validation set
