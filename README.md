@@ -44,6 +44,10 @@ The workflow follows the coursework pipeline:
 
 ## Setup
 
+IMPORTANT:
+Please ensure that you open the correct project root — the folder that directly contains /data, /src, etc. (i.e., the inner 5CCSAMLF-CW1-main).
+Your path should NOT look like: 5CCSAMLF-CW1-main/5CCSAMLF-CW1-main/data
+
 Create a Python Virtual Environment:
 
 Tutorial: https://code.visualstudio.com/docs/python/environments
