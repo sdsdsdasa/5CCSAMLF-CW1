@@ -40,29 +40,6 @@ The workflow follows the coursework pipeline:
     ├── .gitignore
     ├── eval_scripts.py
 
-    CW1/
-    │
-    ├── data/
-    │   ├── CW1_train.csv
-    │   ├── CW1_test.csv
-    │
-    ├── src/
-    │   ├── preprocess.py
-    │   ├── baseline_eval.py
-    │   ├── train_models.py
-    │   ├── tune_model.py
-    │
-    ├── notebooks/
-    │   ├── EDA.ipynb
-    │
-    ├── outputs/
-    │   ├── CW1_submission_Kxxxx.csv
-    │
-    ├── report/
-    │   ├── CW1_report.tex
-    │
-    ├── requirements.txt
-    ├── README.md
 ---
 
 ## Setup
@@ -159,6 +136,7 @@ Name: Yingtao Zheng
 Student ID: K23158987
 
 Machine Learning Data Challenge Coursework One
+
 
 
 
