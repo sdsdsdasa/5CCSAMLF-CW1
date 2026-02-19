@@ -37,16 +37,8 @@ models = {
     "Ridge(alpha=1.0)": Ridge(alpha=1.0, random_state=123),
     "Lasso(alpha=0.001)": Lasso(alpha=0.001, random_state=123, max_iter=10000),
     "ElasticNet(a=0.001,l1=0.5)": ElasticNet(alpha=0.001, l1_ratio=0.5, random_state=123, max_iter=10000),
-    "RandomForest": RandomForestRegressor(
-        n_estimators=300, random_state=123, n_jobs=-1
-    ),
-    "GradientBoosting": GradientBoostingRegressor(
-        random_state=123, 
-        n_estimators=200, 
-        learning_rate=0.1, 
-        max_depth=2, 
-        subsample=1.0
-        ) # obtained from fine-tuning (tune_model.py)
+    "RandomForest": RandomForestRegressor(n_estimators=300, random_state=123, n_jobs=-1),
+    "GradientBoosting": GradientBoostingRegressor(random_state=123)
 }
 
 # Fit + evaluate each model on validation set
