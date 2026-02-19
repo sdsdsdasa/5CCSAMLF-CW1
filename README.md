@@ -13,32 +13,32 @@ The workflow follows the coursework pipeline:
 ---
 
 ## Project Structure
-5CCSAMLF-CW1/
-│
-├── data/
-│ ├── CW1_train.csv
-│ ├── CW1_test.csv
-│
-├── src/
-│ ├── preprocess.py
-│ ├── baseline_eval.py
-│ ├── train_models.py
-│ ├── tune_model.py
-│
-├── notebooks/
-│ ├── EDA.ipynb
-│
-├── outputs/
-│ ├── CW1_submission_K23158987.csv
-│
-├── report/
-│ ├── figures/
-│ ├── CW1_report.pdf
-│
-├── requirements.txt
-├── README.md
-├── .gitignore
-├── eval_scripts.py
+    5CCSAMLF-CW1/
+    │
+    ├── data/
+    │ ├── CW1_train.csv
+    │ ├── CW1_test.csv
+    │
+    ├── src/
+    │ ├── preprocess.py
+    │ ├── baseline_eval.py
+    │ ├── train_models.py
+    │ ├── tune_model.py
+    │
+    ├── notebooks/
+    │ ├── EDA.ipynb
+    │
+    ├── outputs/
+    │ ├── CW1_submission_K23158987.csv
+    │
+    ├── report/
+    │ ├── figures/
+    │ ├── CW1_report.pdf
+    │
+    ├── requirements.txt
+    ├── README.md
+    ├── .gitignore
+    ├── eval_scripts.py
 
     CW1/
     │
@@ -159,6 +159,7 @@ Name: Yingtao Zheng
 Student ID: K23158987
 
 Machine Learning Data Challenge Coursework One
+
 
 
 
