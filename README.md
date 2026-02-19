@@ -44,6 +44,10 @@ The workflow follows the coursework pipeline:
 
 ## Setup
 
+Create a Python Virtual Environment:
+
+Tutorial: https://code.visualstudio.com/docs/python/environments
+
 Install dependencies:
 
 ```bash
@@ -60,6 +64,10 @@ Open and run the notebook:
 ``` bash
 jupyter notebook notebooks/EDA.ipynb
 ```
+
+Alternative:
+
+Manually Navigate to notebooks/EDA.ipynb -> Selete Kernel -> Python Environment -> venv (virtual environment you created) -> Run All -> install ipykernel (optional)
 
 This step: - Analyses data distributions - Checks correlations and feature importance - Detects missing values and outliers - Generates plots in outputs/figures
 
